@@ -1,6 +1,4 @@
-###
 Quantum sea - Classifying water molecules and sodium ions in protein structures   
-###
 
 The goal of the project is building quantum machine learning-based classifiers which can classifies water molecules and sodium ions present in the crystallographic structure of protein obtained by X-ray crystallography, as a kind of toy program for predicting physicochemical properties related with the protein. X-ray crystallography is mainly used to obtain the structure of a protein with high resolution, by using diffraction of X-ray due to electrons in the protein. Due to the nature of the method, small molecules, atoms or ions with the same number of electrons are likely to produce similar peaks. For example, water molecule, one of the small molecules abaundant in protein crystal structures, have 10 electrons, is likely to be confused with sodium ions which has 10 electrons. However, since water molecules does not have net charge, while sodium ions having positive net charge, the structure of proteins that can hold water molecules and sodium ions are likely to be different. From this, water molecules and sodium ions in X-ray crystallography can be distinguished.
 
