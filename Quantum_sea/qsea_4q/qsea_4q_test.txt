@@ -1,0 +1,2 @@
+prediction on H2O - # correct:  35 # wrong:  19
+prediction on NA+ - # correct:  31 # wrong:  23
