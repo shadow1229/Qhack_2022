@@ -1,0 +1,50 @@
+directories:
+1. qsea_cnn - quantum sea (convolution neural network version)
+2. qsea_4q  - quantum sea (non-trainable quanvolutional neural network version)
+3. qsea_4q_trainable  - quantum sea (trainable quanvolutional neural network version)
+
+============================================================
+qsea_cnn
+----------------------------------------------------------------------------------------------
+requirement: pennylane, pytorch (with cuda support), numpy
+GPU required.
+
+For validation:
+1. python qsea_cnn.py
+
+For training:
+0. rm qsea_cnn/cnn_state_*.bin (remove trained parameters)
+1. python grid_prebuilder.py   (atom coordinates to grid)
+2. python qsea_cnn.py 
+=============================================================
+
+============================================================
+qsea_4q
+----------------------------------------------------------------------------------------------
+requirement: pennylane, pytorch (with cuda support), numpy
+GPU required.
+
+For validation:
+1. python qsea_4q.py
+
+For training:
+0. rm qsea_4q/cnn_state_*.bin           (remove trained parameters)
+1. python grid_prebuilder.py             (atom coordinates to grid)
+2. python quanv_preprocessing.py      (grid to quanvolutional layer-processed results)
+3. python qsea_4q.py
+=============================================================
+
+============================================================
+qsea_4q_trainable
+----------------------------------------------------------------------------------------------
+requirement: pennylane, pytorch (with cuda support), numpy
+CPU only version.
+
+For validation:
+1. python qsea_4q_trainable.py
+
+For training:
+0. rm qsea_4q_trainable/cnn_state_*.bin (remove trained parameters)
+1. python grid_prebuilder.py              (atom coordinates to grid)
+2. python qsea_4q_trainable.py                     
+=============================================================
